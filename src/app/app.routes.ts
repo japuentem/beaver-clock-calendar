@@ -7,7 +7,14 @@ export const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'clock-calendar',
     pathMatch: 'full',
+  },
+  {
+    path: 'clock-calendar',
+    loadComponent: () =>
+      import('./clock-calendar/clock-calendar.page').then(
+        (m) => m.ClockCalendarPage
+      ),
   },
 ];

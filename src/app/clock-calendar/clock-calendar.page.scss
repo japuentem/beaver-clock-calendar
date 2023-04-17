@@ -1,0 +1,26 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  grid-template-areas: "clock calendar";
+  justify-items: stretch;
+  align-items: stretch;
+}
+
+
+.clock {
+  grid-area: clock;
+  height: 100%; /* Agrega esta propiedad para establecer la altura del elemento "clock" al 100% del contenedor */
+  width: 100%; /* Agrega esta propiedad para establecer el ancho del elemento "clock" al 100% del contenedor */
+  display: flex; /* Agrega esta propiedad para que el texto ocupe todo el ancho del elemento */
+  justify-content: center; /* Agrega esta propiedad para centrar el texto horizontalmente */
+  align-items: center; /* Agrega esta propiedad para centrar el texto verticalmente */
+  font-size: 90px;
+}
+
+.calendar {
+  grid-area: calendar;
+  height: 100%; /* Agrega esta propiedad para establecer la altura del elemento "calendar" al 100% del contenedor */
+}
